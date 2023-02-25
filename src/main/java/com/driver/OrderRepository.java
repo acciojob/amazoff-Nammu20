@@ -1,4 +1,5 @@
-package com.driver.test;
+package com.driver;
+
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -6,8 +7,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.*;
 @Repository
-
 public class OrderRepository {
+
     HashMap<String, Order> orderDb = new HashMap<>();
     HashMap<String, DeliveryPartner> partnerDb = new HashMap<>();
     HashMap<String, List<String>> pairDb = new HashMap<>();
@@ -162,4 +163,3 @@ public class OrderRepository {
     }
 
 }
-
